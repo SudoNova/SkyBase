@@ -9,7 +9,7 @@ public class TDataModelDescriptor {
 
     //Constructor
     public TDataModelDescriptor() {
-        //
+        //TODO why is it a linked hash map? Probably because in database indexes field order matters.
         fields = new LinkedHashMap<String, TFieldDescriptor>();
     }
 
