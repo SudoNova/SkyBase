@@ -23,6 +23,7 @@ public class TDataModelDescriptor {
     public Map<String, TFieldDescriptor> fields;
     //index Entries
     private TDataModelIndexDescriptorsList indexEntries;
+    // TODO what is this field and what's the usage?
     //Data Division Id Field Name
     String dDIdFieldName= "";
 

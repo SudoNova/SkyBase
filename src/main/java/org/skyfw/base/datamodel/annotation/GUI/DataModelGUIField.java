@@ -9,11 +9,17 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-
+/**
+ * <p>
+ * This annotation converts a data model field to a GUI field.
+ * </p>
+ */
 @Target(value = ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface DataModelGUIField {
-
+    /**
+     * @return String Returns caption of GUI component.
+     */
     String   caption();
     String   unitCaption() default "";
 

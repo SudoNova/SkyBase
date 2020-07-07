@@ -1,6 +1,6 @@
 package org.skyfw.base.classes;
 
-
+//TODO are these types the only allowed types in the framework?
 public class TType {
 
     public static final Class<String> STRING= String.class;

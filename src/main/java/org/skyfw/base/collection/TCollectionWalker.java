@@ -3,7 +3,10 @@ package org.skyfw.base.collection;
 import java.util.Collection;
 import java.util.Iterator;
 
-public class TCollectionWalker <E> {
+/* TODO the iteration is actually implemented in TCollection.
+well, not quite, because TCollection uses a linked hash map */
+
+public class TCollectionWalker<E> {
 
     private Iterator<E> iterator;
     private E currentEntry;

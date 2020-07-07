@@ -5,7 +5,7 @@ import org.skyfw.base.datamodel.TDataModelMCodes;
 import org.skyfw.base.datamodel.TFieldDescriptor;
 import org.skyfw.base.datamodel.exception.TDataModelIndexParamInitException;
 import org.skyfw.base.mcodes.TMCodeSeverity;
-
+// Index name= index_name + "@" + field_name
 public class TDataModelIndexInitiator {
 
     TDataModelDescriptor dataModelDescriptor;
