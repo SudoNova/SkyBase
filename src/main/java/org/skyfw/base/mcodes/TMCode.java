@@ -1,13 +1,25 @@
 package org.skyfw.base.mcodes;
 
 import java.util.Map;
-
+/**
+ * <p>
+ * This class represents part of code which has thrown an exception.
+ * </p>
+ */
 public interface TMCode {
 
+    /**
+     * @return String name of specific module which exception ocurred in it.
+     */
     String getModuleName();
-
+    /**
+     * @return {@link TBaseMCode} of the thrown exception.
+     */
     TBaseMCode getBaseCode();
-
+    /**
+     * 
+     * @return returns a {@link TMCodeSeverity} which contains severity of the error.
+     */
     TMCodeSeverity getSeverity();
 
     // >>> Processing the args will be on TMCodePrettifier
