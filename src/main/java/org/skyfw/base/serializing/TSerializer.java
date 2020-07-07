@@ -32,6 +32,7 @@ public class TSerializer {
 
         if (object instanceof TSerializeEventListener)
             try {
+                //TODO WUT??? This is not even implemented!
                 ((TSerializeEventListener) object).onBeforeSerialize();
             } catch (Throwable e) {
                 throw TSerializeException.create(TSerializeMCode.ON_BEFORE_SERIALIZE_METHOD_EXCEPTION
