@@ -2,6 +2,7 @@ package org.skyfw.base.pool;
 
 import org.skyfw.base.pool.exception.TPoolableInitException;
 import org.skyfw.base.result.TResult;
+// TODO add to gradle or maven manifest.
 import stormpot.Poolable;
 
 public interface TPoolable<T extends TPoolConfig> extends Poolable {
@@ -13,6 +14,7 @@ public interface TPoolable<T extends TPoolConfig> extends Poolable {
      * their <strong>`Poolable`</strong> objects.
      * @param objectPool
      */
+    //TODO what's the use of the mother pool?
     void setMotherPool(TObjectPool objectPool);
     TObjectPool getMotherPool();
 

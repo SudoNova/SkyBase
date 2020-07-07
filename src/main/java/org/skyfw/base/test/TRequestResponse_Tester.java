@@ -11,6 +11,8 @@ import org.skyfw.base.serializing.adapters.json.gson.TGsonAdapter;
 
 import java.io.*;
 
+// TODO I'm still skeptic that this test is meaningless. These TGenericRequest and TGenericResponse stuff
+// are probably meant to send data modes over network.
 public class TRequestResponse_Tester {
     static TLogger logger= TLogger.getLogger();
 

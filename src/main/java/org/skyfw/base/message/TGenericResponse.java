@@ -19,6 +19,7 @@ import org.skyfw.base.serializing.exception.TSerializeException;
 import java.io.IOException;
 import java.util.Iterator;
 
+// TODO is this a response to an RPC call?
 public class TGenericResponse extends TNameValueMessage {
 
     TResult result;

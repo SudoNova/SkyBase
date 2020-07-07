@@ -21,7 +21,9 @@ public class TJacksonObjectMapper extends ObjectMapper implements TPoolable<TJso
     public Class<? extends TJsonSerializerConfig> getConfigClass() {
         return null;
     }
-
+    /**
+     * @return TObjectPool a pool of all JSON serializable representations of a data model (??)
+     */
     @Override
     public TObjectPool<TJacksonObjectMapper> getMotherPool() {
         return motherPool;

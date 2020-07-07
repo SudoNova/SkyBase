@@ -60,6 +60,8 @@ public @interface DataModelGUIField {
     //So Wee Need To Define This Dummy Static Class
     //"XmlJavaTypeAdapter" With "DEFAULT.class" and Some Others Used This Approach Too.
     //-------------------------------------------------------------------------------------------
+
+    //TODO probably this is for a multiple choice GUI element. We should examine this in a test to ensure.
     public static class DefaultGUIFieldAvailableValuesClass implements TGUIFieldAvailableValues_IFace{
 
         @Override
