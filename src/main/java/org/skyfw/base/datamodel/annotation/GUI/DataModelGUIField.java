@@ -21,14 +21,25 @@ public @interface DataModelGUIField {
      * @return String Returns caption of GUI component.
      */
     String   caption();
+    // TODO see what this does in a test run.
     String   unitCaption() default "";
-
+    /**
+     * 
+     * @return int Returns size of this element on the GUI form.
+     */
     int      displaySize() default 0;
+    /**
+     * @return String Returns the location of icon image for this GUI component (if any).
+     */
     String  iconURL() default "";
 
     TGUIInputType inputType() default TGUIInputType.DEFAULT;
     String defaultText() default "";
     String hint() default "";
+    /**
+     * 
+     * @return Boolean Should user be able to change this component on the GUI?
+     */
     boolean readOnly() default false;
     boolean numbersOnly() default false;
     //Just for COMBO_BOX items
