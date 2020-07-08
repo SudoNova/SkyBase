@@ -33,8 +33,7 @@ public interface TMCode {
 
     //ToDo: performance
     default String compile(Object ...args){
-        // TODO what's getRawMessage()? All it's implementations return null!!!
-        // FIXME getRawMessage() is not defined within this interface and there are no supertypes!
+
         String compiledMessage= this.getRawMessage();
         if (compiledMessage == null)
             return "";
