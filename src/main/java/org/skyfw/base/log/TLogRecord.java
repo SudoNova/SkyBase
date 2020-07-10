@@ -1,7 +1,11 @@
 package org.skyfw.base.log;
 
+import org.skyfw.base.log.printers.TLogPrinter_Interface;
 import org.skyfw.base.mcodes.TMCodeSeverity;
-
+/**
+ * <p> This class is supposed to represent a record, which might be printed via 
+ * implementations of {@code TLogPrinter_Interface}.</p>
+ */
 public class TLogRecord {
 
     private String description= "";
