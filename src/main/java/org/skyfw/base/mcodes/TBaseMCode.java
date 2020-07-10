@@ -47,7 +47,20 @@ public enum TBaseMCode implements TMCode {
     private TBaseMCode(int resultCodeValue) {
         this.resultCodeValue = resultCodeValue;
     }
-
+    /**
+     * @return TBseMCodeFamily family of error type, which include:
+     * <ul>
+     * <li><code>1xx</code>: Informational</li>
+     * <li><code>2xx</code>: Success</li>
+     * <li><code>3xx</code>: Connection error</li>
+     * <li><code>4xx</code>: Client error</li>
+     * <li><code>5xx</code>: Server error</li>
+     * <li><code>7xx</code>: Local error</li>
+     * </ul>
+     * <span>Finally, every other type which cannot be categorized in the above list,
+     *  is recognized as <i>Unknown error</i>.
+     * 
+     */
     public TBaseMCodeFamily getCodeFamily() {
         int familyDigit = this.resultCodeValue / 100;
         switch (familyDigit) {
