@@ -105,11 +105,12 @@ public enum TBaseMCode implements TMCode {
         return null;
     }
 
+    //FIXME this is supposed to be an override, but no interface/superclass implements it.
     @Override
     public String getRawMessage() {
         return null;
     }
-
+    //FIXME same as above
     @Override
     public TBaseMCode getBaseCode() {
         return this;
