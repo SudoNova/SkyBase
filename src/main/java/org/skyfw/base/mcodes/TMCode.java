@@ -33,7 +33,7 @@ public interface TMCode {
 
     //ToDo: performance
     default String compile(Object ...args){
-        // TODO what's getRawMessage()? All it's implementations return null!!!
+        // TODO what's getRawMessage()? All its implementations return null!!!
         String compiledMessage= this.getRawMessage();
         if (compiledMessage == null)
             return "";

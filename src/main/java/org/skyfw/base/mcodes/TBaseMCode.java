@@ -58,7 +58,7 @@ public enum TBaseMCode implements TMCode {
      * <li><code>7xx</code>: Local error</li>
      * </ul>
      * <span>Finally, every other type which cannot be categorized in the above list,
-     *  is recognized as <i>Unknown error</i>.
+     *  is recognized as <i>Unknown error</i></span>.
      * 
      */
     public TBaseMCodeFamily getCodeFamily() {
@@ -86,16 +86,20 @@ public enum TBaseMCode implements TMCode {
 
         return TBaseMCodeFamily.UNKNOWN_ERROR_CODE_FAMILY;
     }
-
+    /**
+     * @return {@link String} Returns name of code module which returned the error.
+     */
     @Override
     public String getModuleName() {
         return "SkyBase";
     }
-
+    // TODO does this return the actual code? If yes, then how? Because there are no implementations.
     public int getCode() {
         return resultCodeValue;
     }
-
+    // TODO I believe some error codes might induce serverity as well (e.g. most server errors),
+    // that's probably why author included this method here, so severity can be copied from here,
+    // in addition, to Exception.SetSeverity() which user might call to change the severity.
     @Override
     public TMCodeSeverity getSeverity() {
         return null;
