@@ -14,10 +14,9 @@ public interface TPoolable<T extends TPoolConfig> extends Poolable {
      * their <strong>`Poolable`</strong> objects.
      * @param objectPool
      */
-    //TODO what's the use of the mother pool?
+    //TODO what's the use of the mother pool? Probably all objects are pooled. OK where is this used at all?
     void setMotherPool(TObjectPool objectPool);
     TObjectPool getMotherPool();
-
 
     @Override
     default void release() {
