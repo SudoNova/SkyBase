@@ -298,6 +298,10 @@ public final class TLogger {
     //******************************************************************************************************************
 
     //ToDo: Performance
+    // TODO synchronized calls are the worst. Using async logging is far better.
+    // There are already heavily tuned loggers such as log4j. I believe writing everything
+    // from the scratch is the worst idea. At very least, some can extend log4j components
+    // to fit their purpose.
     public synchronized void doLog(TMCodeSeverity logLevel, TException e){
 
         doLog(logLevel, null, null, 0, e, null, (byte)-1);
@@ -308,7 +312,6 @@ public final class TLogger {
 
         doLog(logLevel, logDescription, methodName, lineNumber, e, null, (byte)-1);
     }
-
     private synchronized void doLog(TMCodeSeverity logLevel, String logDescription, String methodName, int lineNumber
             , Throwable e, TLogRecord.TProgressStatusLogType ProgressStatus, byte progress){
 
