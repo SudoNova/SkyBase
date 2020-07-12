@@ -46,7 +46,7 @@ public final class TLogger {
     private TMCodeSeverity minLogLevelForPrint = defaultMinLogLevelForPrint;
     /**
      * <p>
-     * Actual log level for printing to the log file, which is set to
+     * Actual log level for printing to the log file (if any), which is set to
      * {@link #defaultMinLogLevelForFile} by default.
      * </p>
      */
