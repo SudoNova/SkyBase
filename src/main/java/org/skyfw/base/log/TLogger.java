@@ -51,6 +51,9 @@ public final class TLogger {
      * </p>
      */
     private TMCodeSeverity minLogLevelForFile = defaultMinLogLevelForFile;
+    /**
+     * <p></p>
+     */
     private TLoggerStackTraceType stackTraceType = TLoggerStackTraceType.AUTO_STACK_TRACE_IF_NO_MANUAL_DATA_PROVIDED;
 
     private String className = null;
