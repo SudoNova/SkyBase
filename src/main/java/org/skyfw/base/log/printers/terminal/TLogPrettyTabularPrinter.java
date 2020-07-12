@@ -1,5 +1,6 @@
 package org.skyfw.base.log.printers.terminal;
 
+// TODO add to build.gradle
 import com.jakewharton.fliptables.FlipTable;
 import org.skyfw.base.log.printers.TLogPrinter_Interface;
 import org.skyfw.base.log.TLogRecord;
