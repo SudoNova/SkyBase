@@ -43,6 +43,8 @@ public final class TLogger {
      * {@link #defaultMinLogLevelForPrint} by default.
      * </p>
      */
+    //TODO I suppose a user should be able to change this value, but I found no setter/getter.
+    // Am I wrong?
     private TMCodeSeverity minLogLevelForPrint = defaultMinLogLevelForPrint;
     /**
      * <p>
@@ -50,10 +52,17 @@ public final class TLogger {
      * {@link #defaultMinLogLevelForFile} by default.
      * </p>
      */
+    // TODO Same as above
     private TMCodeSeverity minLogLevelForFile = defaultMinLogLevelForFile;
     /**
-     * <p></p>
+     * <p>
+     * This is stack trace resolving policy, whenever a logger wants to print an
+     * exception.<br>
+     * The default value is set to
+     * {@link TLoggerStackTraceType#AUTO_STACK_TRACE_IF_NO_MANUAL_DATA_PROVIDED}
+     * </p>
      */
+    // TODO same as above
     private TLoggerStackTraceType stackTraceType = TLoggerStackTraceType.AUTO_STACK_TRACE_IF_NO_MANUAL_DATA_PROVIDED;
 
     private String className = null;
