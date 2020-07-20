@@ -11,6 +11,7 @@ public class TLogRecord {
     private String description= "";
     private String className= "";
     private String methodName= "";
+    // TODO is this the file name of log? If yes, why is it here, not in TLogger?
     private String fileName= "";
     private int lineNumber= -1;
     private long timeStamp= 0;
